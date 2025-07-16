@@ -1,0 +1,235 @@
+.first-section .diff-color,.pro-num{
+  color: #62D0B6;
+}
+.fire-color{
+  color: #F55157;
+}
+.dark-color{
+  color: #666666;
+}
+.fa-star {
+  position: relative;
+  display: inline-block;
+  color: #ccc; 
+  direction: rtl;
+}
+
+.fa-star .fill {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  height: 100%;
+  overflow: hidden;
+  color: gold;
+  pointer-events: none;
+  direction: ltr; 
+}
+
+.fa-star .fill::before {
+  content: "\f005"; 
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0; 
+}
+
+
+.thumb.active-thumb {
+  outline: 2px solid #62D0B6;
+  opacity: 1;
+}
+.thumb {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+.thumb:hover {
+  opacity: 1;
+}
+
+
+#imagesCol .product-details-images img{
+  border: 1px solid #EEEEEE;
+}
+
+#product-details .main-image img{
+   border: 1px solid #EEEEEE;
+}
+
+#product-details .product-inf{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: 1px solid #EEEEEE;
+   padding: 16px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+#product-details .product-inf .right-part p{
+   font-size: 12px;
+   font-weight: 400;
+   color: #A5A5A5;
+}
+#product-details .product-inf span i{
+  color: #62D0B6;
+}
+#product-details .product-inf .icon-plus{
+  border: 1px solid #EEEEEE;
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#product-details .product-inf .icon-txt{
+  border: 1px solid #62D0B6;
+  padding: 10px 16px;
+  color: #62D0B6;
+  border-radius: 5px;
+  transition: all 1s;
+  cursor: pointer;
+}
+#product-details .product-inf .icon-txt:hover{
+  background-color:#62D0B6;
+  color: white;
+}
+#product-details .product-inf .icon-plus i{
+  font-size: 14px;
+  color: #666666;
+  font-weight: 300;
+}
+
+#product-details .total-details{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#product-details .total-details .count-inf{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#product-details .total-details .details-count{
+   border: 1px solid #EEEEEE;
+   border-radius: 5px;
+}
+
+#product-details .total-details .details-count .count-num{
+  padding:20px;
+  color: #333333;
+  font-weight: 500;
+}
+#product-details .total-details .details-count i{
+     border: 1px solid #EEEEEE;
+     padding: 20px;
+     font-size: 14px;
+     color: #333333;
+      transition: all 0.5s ease-in-out;
+}
+#product-details .total-details .details-count i:hover{
+  background-color: #d7d5d5;
+}
+#product-details .details-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#product-details .details-buttons i{
+  font-size: 10px;
+  padding-left: 10px;
+}
+#product-details .details-buttons button{
+  width: 48%;
+  padding-block: 15px;
+  background-color: #62D0B6;
+  color: white;
+  transition: all 0.8s;
+}
+#product-details .details-buttons button:hover{
+  background-color: white;
+  color: #62D0B6;
+  border: 1px solid #62D0B6;
+}
+#product-details .details-buttons .btn-2{
+  background-color: white;
+  color: #62D0B6;
+  border: 1px solid #62D0B6;
+  transition: all 0.8s ease-in-out;
+}
+#product-details .details-buttons .btn-2:hover{
+  background-color: #62D0B6;
+  color: white;
+}
+.details-content .details-item{
+  padding: 16px;
+   border: 1px solid #EEEEEE;
+   border-radius: 5px;
+}
+.w-90{
+  width: 90px;
+}
+.details-content .details-item p{
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 100%;
+  padding-top: 30px;
+}
+.details-content .details-item span{
+color: #62D0B6;
+font-size: 13px;
+}
+/* =============================================================== */
+@media (max-width: 1200px){
+  .share-pro{
+    display: block;
+    padding-top: 8px;
+  }
+  #product-details .product-inf .icon-txt span{
+    white-space: nowrap;  
+  }
+}
+@media (max-width: 1000px) {
+.share-pro{
+    display: inline;
+    
+  }
+  #product-details .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .main-image-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  #imagesCol {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-image {
+    flex: 1;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+  #product-details .col-md-6 {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
